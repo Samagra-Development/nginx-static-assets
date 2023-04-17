@@ -7,7 +7,5 @@ services:
       - ${PORT}:80
     env_file:
       - .env
-
-
-
-    
+    volumes:
+      - ./static:/etc/nginx/static
